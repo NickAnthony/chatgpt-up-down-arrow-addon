@@ -56,3 +56,7 @@ Load `dist` directory
 ## Test
 
 `npx jest` or `npm run test`
+
+## Credits
+
+This project template is based on the [Chrome Extension TypeScript Starter](https://github.com/chibat/chrome-extension-typescript-starter/tree/main) by @chibat.
