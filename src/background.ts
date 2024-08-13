@@ -1,6 +1,6 @@
-function polling() {
-  // console.log("polling");
-  setTimeout(polling, 1000 * 30);
-}
-
-polling();
+// Listen for URL changes
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.url) {
+    chrome.tabs.sendMessage(tabId, { type: "urlChanged", url: changeInfo.url });
+  }
+});
